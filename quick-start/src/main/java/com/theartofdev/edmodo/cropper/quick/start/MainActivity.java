@@ -12,7 +12,7 @@
 
 package com.theartofdev.edmodo.cropper.quick.start;
 
-import android.content.Intent;
+ import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         .setCropMenuCropButtonTitle("Done")
         .setRequestedSize(400, 400)
         .setCropMenuCropButtonIcon(R.drawable.ic_launcher)
+            .setAutoZoomEnabled(true)
         .start(this);
   }
 
